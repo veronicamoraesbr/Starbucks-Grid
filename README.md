@@ -5,7 +5,7 @@
     </div>
                                                                                                                                                 
 <div>
-  <h2> Design de Interface </h2>
+  <h2> Starbucks GRID </h2>
   <p>
   Projeto de exercício prático para treinar HTML e CSS com foco em GRID e responsividade.  <br>
   Duração: 2 horas para assistir a aula e construir o projeto do zero. <br>
