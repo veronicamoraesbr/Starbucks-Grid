@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+    /* Comandos do botão padrão da página */
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #454545;
+    border-radius: 3px;
+    color: #454545;
+    text-decoration: none;
+}
+
+.button:hover{
+    /* Fazer o botão mudar de cor quando passa o mouse */
+    color: #fff;
+    background-color: #454545;
+}
+
+
+header .line{ 
+    /* Comando para linha verde no topo da página */
+    background-color: #117050;
+    height: 10px;
+}
+
+.container{
+    max-width: 1140px;  /* Determinando a largura máxima da tela */
+    margin: auto;       /* Para ficar no meio */
+}
+
+.bar{
+    background-color: #117050;
+    width: 168px;
+    height: 22px;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 100px;     /* Separação das letras */
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 45px;     /* Separação das letras */
+    margin: 20px 0;
+
+}
+
+.header--area {
+    display: flex; /* Um ao lado do outro */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinhamento central vertical */
+    height: 100px;
+}
+
+.header--left img { 
+    /* Definindo tamanho da logo */
+    width: 64px;
+    height: 64px;
+}
+
+.header--right{
+    display: flex;
+    align-items: center;
+
+}
+
+.header--search form{
+    display: flex;
+}
+
+.header--search input{
+    /* Comandos para criação do campo de busca */
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 1px solid #999;
+    outline: 0;
+    width: 100%;
+    max-width: 250px;
+}
+
+.header--search button{
+    border: 0;     /* Tirar borda da imagem */
+    background: transparent;
+    margin-left: -30px;   /* Fazer a lupa entrar no campo de busca */
+    cursor: pointer;     /* Colocar o cursor de mãozinha */
+}
+
+.header--search button img{
+    width: 16px;
+    height: 16px;
+}
+
+.header--menu{
+    margin-left: 50px;
+    cursor: pointer; /* Colocar o cursor de mãozinha */
+}
+
+.header--menu img{
+    /* Tamanho da Imagem */
+    width: 24px;
+    height: 24px;
+}
+
+.banner{ /* Banner de fundo */
+    background-image: url(/bg.jpg);
+    background-position: center;
+    background-size: cover; /* Pega a área disponível e se ajusta ao monitor */
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.banner--images{
+    margin-top: 60px;
+}
+
+.banner--images img{
+    width: 148px;
+    height: 148px;
+    border: 6px solid #117050;
+    border-radius: 50%; /* Fazer o círculo */
+    margin-right: 40px;
+}
+
+.area1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.area1--content{
+    padding: 80px;
+}
+
+.area1--quote{
+    margin-bottom: 30px;
+}
+
+.area1--text{
+    margin-bottom: 50px;
+    /* Altura da linha */
+    line-height: 25px; 
+}
+
+.area1--img1{
+    background-color: green;
+    height: 350px;
+    background-image: url(/f2.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.area1--img2{
+    background-color: red;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-image: url(/f1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.area2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.area2--content{
+    padding: 80px;
+}
+
+.area2--text{
+    margin-bottom: 50px;
+    /* Altura da linha */
+    line-height: 25px; 
+}
+
+.area2--img1{
+    background-color: green;
+    height: 450px;
+    background-image: url(/f4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.area2--img2{
+    background-color: red;
+    grid-column: 1/ 2;
+    grid-row: 1 / 3;
+    background-image: url(/f3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.area3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.area3--content{
+    padding: 200px 80px;
+    background-image: url(/bg2.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.area3--text{
+    margin-bottom: 50px;
+    /* Altura da linha */
+    line-height: 25px; 
+}
+
+.area3--img1{
+    background-image: url(/f5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.area4{
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    background-color: #e8e9ee;
+}
+
+.area4--content{
+    padding: 150px 80px;
+}
+
+.area4--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area4--img1{
+    background-image: url(/bg3.jpg);
+    background-position: left;
+}
+
+.area5{
+    background-image: url(/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Quando a tela for menor que 1140px */
+@media (min-width:769px) and (max-width: 1140px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Para Tablet */
+@media (min-width:426px) and (max-width:768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .area1{
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area2{
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .area3{
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+/* Para Mobile */
+@media (max-width:425px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header--menu{
+        margin-left: 20px;
+    }
+
+    /* Diminuir o campo de busca */
+    .header--search input{
+        max-width: 80px;
+    }
+
+    h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    h2{
+        font-size: 25px;
+        line-height: 30px;    
+    }
+
+    .banner--images img{
+        width: 70px;
+        height: 80px;
+        border: 3px solid #117050;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .area1,
+    .area2,
+    .area3,
+    .area4{
+        grid-template-columns: 1fr;
+    }
+
+    .area1--content,
+    .area2--content,
+    .area3--content,
+    .area4--content{
+        padding: 40px;
+    }
+
+    .area5{
+        height: 200px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 40px 20px;
+    }
+}
